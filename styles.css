@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+p{
+    font-size: 16px;
+}
+.container{
+    width: 440px;
+    height: 650px;
+    margin: 75px auto;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 15px 0px 0px #ccd6fa79;
+}
+.bg-img{
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 1000px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.top-img img{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+.summary{
+    width: 80%;
+    text-align: center;
+    margin: 25px auto;
+}
+.summary h1{
+    font-size: 28px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.summary p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.anual-plan{
+    width: 80%;
+    height: 80px;
+    margin: 15px auto;
+    border-radius: 10px;
+    background-color: hsla(225, 100%, 94%, 0.781);
+}
+.anual-plan img{
+    float: left;
+    padding-top: 12px;
+    margin-left: 15px;
+}
+.anual-plan p{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    width: 40%;
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.anual-plan span{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.anual-plan a{
+    width: 25%;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    float: right;
+    padding-top: 25px;
+}
+.anual-plan a:hover{
+    color:#766CF1;
+}
+.buttons{
+    width: 80%;
+    margin: 20px auto;
+}
+.buttons button{
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+}
+.buttons button.Payment{
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+}
+.buttons button.Payment:hover{
+    background-color: #766CF1;
+}
+.buttons button.Order{
+    background-color: #FFF;
+    color: hsl(224, 23%, 55%);
+}
+.buttons button.Order:hover{
+    color: hsl(223, 47%, 23%)
+}
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 0%);
+}
+
+.attribution a:hover {
+    color: hsl(214, 47%, 46%);
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 90%;
+        height: 600px;
+    }
+    .bg-img{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
+
+
